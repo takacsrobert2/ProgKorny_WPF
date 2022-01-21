@@ -1,0 +1,57 @@
+﻿<Window x:Class="DugongClicker.Info"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DugongClicker"
+        mc:Ignorable="d"
+        Title="Info" Height="424.4" Width="327.2">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="White" Offset="0"/>
+            <GradientStop Color="#FF0550AB" Offset="1"/>
+            <GradientStop Color="#FE37FCAB"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <Window.Resources>
+        <SolidColorBrush x:Key="BG" Color="#FF3573DD"/>
+    </Window.Resources>
+    <Grid Margin="0,0,-0.4,-7">
+        <Label
+            Foreground="#FFFFFC91"
+            FontWeight="Bold"
+            FontSize="24"
+            HorizontalAlignment="Center" Margin="12,10,9.6,320">
+            Üdv a DugongClickerben
+        </Label>
+        <Label
+            Foreground="White"
+            FontWeight="Bold"
+            FontSize="15" Margin="3,46,2.6,-18.6"
+            HorizontalAlignment="Center"
+            
+            
+            >
+            <TextBlock Height="337">Ha nem játszottál még hasonló játékkal, <LineBreak/>az alkalmazás célja lényegében annyi,<LineBreak/> 
+                hogy a lehető legtöbb pontot érjük el<LineBreak/> - határ a csillagos ég.<LineBreak/> <LineBreak/>Pontokat úgy érhetsz el,
+                ha rákattintasz <LineBreak/>az ablak közepén található dugongra.<LineBreak/>
+                Boldogságpontokat tétlenül is kapsz, <LineBreak/>hiszen eredménnyed másodpercenként<LineBreak/> szintén gyarapodik, az
+                alsó 3 gomb <LineBreak/> segítségével pedig további boostokra <LineBreak/> tehetsz szert.
+                <LineBreak/><LineBreak/><LineBreak/>Kellemes időtöltést, és jó szórakozást <LineBreak/> kívánok öcsikesz!
+            </TextBlock>
+        </Label>
+        <StackPanel Grid.RowSpan="1" Margin="127,357,-64,-19.2">
+            <Button
+            x:Name="MenuButton"
+                Width="89"
+                Height="25"
+                Margin="0,1,68.2,1"
+                Background="{DynamicResource BG}"
+                HorizontalAlignment="Right"
+                FontSize="15.0"
+                Click="MenuButton_Click"
+                Content="Menü" RenderTransformOrigin="0.01,7.183"/>
+        </StackPanel>
+
+    </Grid>
+</Window>
